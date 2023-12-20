@@ -10,7 +10,7 @@ on run {input, parameters}
 			set theFolder to quoted form of POSIX path of (container of theItem as alias)
 			set tmpFile to quoted form of (theFolder & fileName & ".tmp")
 			set zipFile to quoted form of (fileName & ".zip")
-			set myZipScript to "cd " & theFolder & "; zip -r -X " & zipFile & " " & "./" & fileName
+			set myZipScript to "cd " & theFolder & "; zip -r -X " & zipFile & " " & "./" & quoted form of fileName
 			do shell script myZipScript
 			
 		
