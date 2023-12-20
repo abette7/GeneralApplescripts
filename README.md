@@ -1,5 +1,4 @@
-# GeneralApplescripts
-## General Applescripts
+# General Applescripts
 
 ### CompressSingleItems.scpt
 Compress batches of folders/files into zip files of the same names.
