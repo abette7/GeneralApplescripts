@@ -1,7 +1,7 @@
-## GeneralApplescripts
-# General Applescripts
+# GeneralApplescripts
+## General Applescripts
 
-# CompressSingleItems.scpt
+### CompressSingleItems.scpt
 Compress batches of folders/files into zip files of the same names.
 Script is set up to paste into an automator workflow
 1. In Automator create a new quick action, change "Workflow receives current" to files or folders.
