@@ -7,3 +7,8 @@ Script is set up to paste into an automator workflow
 2. Next, add "Run Applescript" to the workflow, then past in the code.
 3. Save the workflow, then install it from finder with "Automator Installer.app"\
 The script will be launchable from finder by right clicking and choosing quick actions.
+
+### SplitPDF(cpdf).scpt
+Splits a multipage PDF file to individual PDF pages.
+Depends on having cpdf (Coherent PDF) in the $PATH
+
