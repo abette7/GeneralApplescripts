@@ -14,7 +14,7 @@ on open theItems
 		tell application "System Events" to set FileName to name of item i of theItems
 		set filenameBase to do shell script "cd " & quoted form of posixMyPath & ";var=" & quoted form of FileName & ";echo ${var%.*}"
 		
-		set myScript to "eval $(/usr/libexec/path_helper -s); source ~/.zshrc; cpdf -split " & quoted form of posixMyPath & FileName & " -o " & quoted form of posixMyPath & filenameBase & "_%%%.pdf"
+		set myScript to "eval $(/usr/libexec/path_helper -s); source ~/.zshrc; cpdf -split " & quoted form of (posixMyPath & FileName) & " -o " & quoted form of (posixMyPath & filenameBase & "_%%%.pdf")
 		--display dialog myScript
 		do shell script myScript
 	end repeat
